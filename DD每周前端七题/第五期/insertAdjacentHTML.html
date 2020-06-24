@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="one">
+      <div>22222222222222</div>
+      我是one
+      <div>11111111111</div>
+    </div>
+
+    <script>
+      const one = document.getElementById("one");
+      //beforebegin、afterbegin、beforeend、afterend
+      one.insertAdjacentHTML("beforeend", '<div id="two">我是two</div>');
+    </script> -->
+
+    <div id="container"></div>
+    <script>
+      const container = document.getElementById("container");
+      const loading = '<div id="loading">loading...</div>';
+      container.insertAdjacentHTML("beforeend", loading);
+      setTimeout(() => {
+        container.innerHTML = "";
+      }, 2000);
+    </script>
+  </body>
+</html>

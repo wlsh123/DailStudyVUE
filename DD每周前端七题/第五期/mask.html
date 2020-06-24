@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //实现mask函数将'123456'转为'##3456'.
+      const mask = (str, maskChar = "#") => {
+        if (!str || str.length < 4) return str;
+        return str.slice(-4).padStart(str.length, maskChar);
+      };
+      console.log(mask("123456", "#"));
+    </script>
+  </body>
+</html>
